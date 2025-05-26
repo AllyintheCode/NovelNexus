@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Jakarta";
+  src: url(/public/Fonts/PlusJakartaSans-Medium.ttf);
+}
