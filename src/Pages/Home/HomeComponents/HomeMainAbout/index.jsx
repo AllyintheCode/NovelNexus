@@ -11,7 +11,7 @@ const HomeMainAbout = () => {
         <div>
           {mainData.slice(0, 2).map(({ id, icon, title, text }) => (
             <div key={id} className={id === 1 ? 'mt-20' : ''}>
-              <img src={icon} alt="" className='mb-8' />
+              <img src={icon} alt="" className='mb-8 mt-12' />
               <h2 className='text-[#d37643] text-xl mb-4'>{title}</h2>
               <p className='text-[#907a68] w-[310px]'>{text}</p>
             </div>
@@ -27,8 +27,8 @@ const HomeMainAbout = () => {
 
         <div>
           {mainData.slice(3).map(({ id, icon, title, text }) => (
-            <div key={id} className={id === 1 ? 'mt-20' : ''}>
-              <img src={icon} alt="" className='mb-8' />
+            <div key={id} className={id === 1 ? 'mt-20 ' : ''}>
+              <img src={icon} alt="" className='mb-8 mt-12' />
               <h2 className='text-[#d37643] text-xl mb-4'>{title}</h2>
               <p className='text-[#907a68] w-[310px]'>{text}</p>
             </div>
