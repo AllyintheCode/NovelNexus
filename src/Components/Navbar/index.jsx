@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex justify-between items-center pt-5 relative px-4 md:px-8 ">
+    <div className="flex justify-between items-center pt-5 relative px-4 md:px-8 max-w-[1200px] mx-auto ">
       <NavLink to={"/"}>
         <img src="/logo.svg" alt="logo" />
       </NavLink>
@@ -19,9 +19,9 @@ const Navbar = () => {
       )}
 
       <div className={`fixed md:relative top-0 right-0 h-screen md:h-auto w-2/3 sm:w-1/2 
-        bg-[#fcf2dc] flex flex-col md:flex-row justify-center md:justify-start 
-        items-center md:items-center gap-6 pt-20 md:pt-0 px-6 md:p-0 
-        transition-transform duration-400 z-50
+        bg-[#fcf2dc] flex flex-col md:flex-row justify-center md:justify-center 
+        items-center md:items-center gap-8 pt-20 md:pt-0 px-6 md:p-0 
+        transition-transform duration-400 
         ${showMenu ? 'translate-x-0' : 'translate-x-full'} 
         md:translate-x-0 md:flex`}>
 

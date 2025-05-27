@@ -7,8 +7,8 @@ import { LiaBookSolid } from "react-icons/lia";
 
 const HomeCoundUp = () => {
   return (
-    <div className='bg-[#008186]'>
-      <div className='flex-col h-75 gap-2 lg:max-w-[1200px] mx-auto flex lg:gap-0 lg:flex-row items-center text-4xl lg:h-34 justify-between text-[#fcf2dc]'>
+    <div className='bg-[#008186] '>
+      <div className='flex-col h-75 gap-2 lg:max-w-[1200px] mx-auto flex md:gap-3 md:flex-row items-center md:justify-center text-4xl md:h-34 lg:justify-between text-[#fcf2dc]'>
         <div>
           <div className='flex items-center gap-2'>
             <HiMiniBuildingLibrary />
