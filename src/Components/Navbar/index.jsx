@@ -7,9 +7,9 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex justify-between items-center pt-5 relative px-4 md:px-8">
+    <div className="flex justify-between items-center pt-5 relative px-4 md:px-8 ">
       <NavLink to={"/"}>
-        <img src="/logo.svg" alt="logo" className="w-24" />
+        <img src="/logo.svg" alt="logo" />
       </NavLink>
       {showMenu && (
         <div
