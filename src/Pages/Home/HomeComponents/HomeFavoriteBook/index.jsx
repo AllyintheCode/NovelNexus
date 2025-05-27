@@ -1,8 +1,8 @@
 import React from 'react'
+import favoritData from '../../../../Mock/favoritData'
 import { Link } from 'react-router-dom'
-import cardData from '../../../../Mock/cardData'
 import { motion } from 'framer-motion'
-const HomeMostPopular = () => {
+const HomeFavoriteBook = () => {
   return (
     <div className='max-w-[1200px] mx-auto mt-30'>
       <motion.div
@@ -24,7 +24,7 @@ const HomeMostPopular = () => {
         transition={{ duration: 0.6, delay: 2 * 0.2 }}
         viewport={{ once: true }}
         className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center mt-12  gap-5'>
-        {cardData.map(({ id, image, title, author, price, oldPrice }) => (
+        {favoritData.map(({ id, image, title, author, price, oldPrice }) => (
           <div key={id}>
             <img
               src={image}
@@ -45,4 +45,4 @@ const HomeMostPopular = () => {
   )
 }
 
-export default HomeMostPopular
+export default HomeFavoriteBook

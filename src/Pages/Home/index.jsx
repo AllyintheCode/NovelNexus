@@ -5,6 +5,7 @@ import HomeCoundUp from './HomeComponents/HomeCoundUp'
 import HomeMostPopular from './HomeComponents/HomeMostPopular'
 import HomeMainAbout from './HomeComponents/HomeMainAbout'
 import HomeDiscount from './HomeComponents/HomeDiscount'
+import HomeFavoriteBook from './HomeComponents/HomeFavoriteBook'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <HomeMostPopular />
       <HomeMainAbout />
       <HomeDiscount />
+      <HomeFavoriteBook />
     </div>
 
 

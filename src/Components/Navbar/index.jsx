@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { BsBasket2Fill } from "react-icons/bs";
 import { IoMenu, IoClose } from "react-icons/io5";
-
+import { motion } from 'framer-motion'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="flex justify-between items-center pt-5 relative px-4 md:px-8 max-w-[1200px] mx-auto ">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="flex justify-between items-center pt-5 relative px-4 md:px-8 max-w-[1200px] mx-auto ">
       <NavLink to={"/"}>
         <img src="/logo.svg" alt="logo" />
       </NavLink>
@@ -73,7 +77,7 @@ const Navbar = () => {
           <IoMenu />
         </button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

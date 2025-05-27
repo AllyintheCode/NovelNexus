@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { motion } from 'framer-motion'
 const HomeDiscount = () => {
   return (
     <div className='max-w-[1200px] mx-auto mt-20 px-4'>
       <div className='flex flex-col gap-10 lg:flex-row lg:justify-between'>
-        {/* Box 1 */}
-        <div className='w-full lg:w-[49%] bg-[#008186] flex flex-col sm:flex-row p-[30px] sm:p-[50px] justify-between items-center relative'>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 * 0.2 }}
+          viewport={{ once: true }}
+          className='w-full lg:w-[49%] bg-[#008186] flex flex-col sm:flex-row p-[30px] sm:p-[50px] justify-between items-center relative'>
           <div className='max-w-[172px] max-h-[118px] mb-6 sm:mb-0'>
             <img src="/sale.png" alt="" />
           </div>
@@ -19,10 +23,14 @@ const HomeDiscount = () => {
             </Link>
           </div>
           <img src="/discount.svg" alt="" className='absolute top-[-19px] right-[-15px]  w-[70px] sm:w-[100px] sm:top-[-29px] sm:right-[-27px]' />
-        </div>
+        </motion.div>
 
-        {/* Box 2 */}
-        <div className='w-full lg:w-[49%] bg-[#e7b490] flex flex-col sm:flex-row p-[30px] sm:p-[50px] justify-between items-center relative'>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 * 0.2 }}
+          viewport={{ once: true }}
+          className='w-full lg:w-[49%] bg-[#e7b490] flex flex-col sm:flex-row p-[30px] sm:p-[50px] justify-between items-center relative'>
           <div className='max-w-[172px] max-h-[118px] mb-6 sm:mb-0'>
             <img src="/basket.png" alt="" />
           </div>
@@ -35,7 +43,7 @@ const HomeDiscount = () => {
             </Link>
           </div>
           <img src="/discount2.svg" alt="" className='absolute wtop-[-19px] right-[-15px] sm:top-[-29px] sm:right-[-27px] w-[70px] sm:w-[100px]' />
-        </div>
+        </motion.div>
       </div>
     </div>
   )
