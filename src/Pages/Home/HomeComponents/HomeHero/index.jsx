@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from 'framer-motion'
-const HomeHero = () => {
+const   HomeHero = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row items-center justify-between px-4 md:px-16 py-10 max-w-[1200px] mx-auto mt-20 bg-[#fcf2dc]'>
       <motion.div

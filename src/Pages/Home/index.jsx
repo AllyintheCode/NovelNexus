@@ -6,6 +6,8 @@ import HomeMostPopular from './HomeComponents/HomeMostPopular'
 import HomeMainAbout from './HomeComponents/HomeMainAbout'
 import HomeDiscount from './HomeComponents/HomeDiscount'
 import HomeFavoriteBook from './HomeComponents/HomeFavoriteBook'
+import HomeAuthor from './HomeComponents/HomeAuthor'
+import HomeEmail from './HomeComponents/HomeEmail'
 
 const Home = () => {
   return (
@@ -13,10 +15,12 @@ const Home = () => {
       <Navbar />
       <HomeHero />
       <HomeCoundUp />
-      <HomeMostPopular />
+      <HomeMostPopular /> 
       <HomeMainAbout />
       <HomeDiscount />
       <HomeFavoriteBook />
+      <HomeAuthor />
+      <HomeEmail/>
     </div>
 
 
