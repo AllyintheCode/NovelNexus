@@ -1,12 +1,20 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar'
+import BlogHero from './BlogComponents/BlogHero'
+import BlogHeroLink from './BlogComponents/BlogHeroLink'
+import Author from '../../Components/Author'
+import Footer from '../../Components/Footer'
 
 const Blog = () => {
   return (
     <div className='bg-[#fcf2dc]'>
-      <div className='max-w-[1200px] mx-auto'>
+     
         <Navbar />
-      </div>
+        <BlogHero/>
+        <BlogHeroLink/>
+        <Author/>
+        <Footer/>
+     
     </div>
   )
 }

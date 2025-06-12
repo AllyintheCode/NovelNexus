@@ -8,6 +8,8 @@ import HomeDiscount from './HomeComponents/HomeDiscount'
 import HomeFavoriteBook from './HomeComponents/HomeFavoriteBook'
 import HomeAuthor from './HomeComponents/HomeAuthor'
 import HomeEmail from './HomeComponents/HomeEmail'
+import Footer from '../../Components/Footer'
+import Author from '../../Components/Author'
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
       <HomeFavoriteBook />
       <HomeAuthor />
       <HomeEmail/>
+      <Author/>
+      <Footer/>
     </div>
 
 
